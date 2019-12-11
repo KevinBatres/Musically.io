@@ -121,11 +121,11 @@ public class MyMusicApp {
                                 //System.out.println("G");
                                 notes = notes + " " + "Gq Bq Dq Gq";
                             } else {
-                                if (acords.get(i).equals("AmajWW")) {
+                                if (acords.get(i).equals("AmajW")) {
                                     //System.out.println("A");
                                     notes = notes + " " + "Aq C#q Eq Aq";
                                 } else {
-                                    if (acords.get(i).equals("BmajWW")) {
+                                    if (acords.get(i).equals("BmajW")) {
                                         //System.out.println("B");
                                         notes = notes + " " + "Bq D#q F#q Bq";
                                     }
@@ -140,7 +140,6 @@ public class MyMusicApp {
 
         String[] song = {cords, notes};
         return song;
-
     }
 
 
@@ -153,6 +152,7 @@ public class MyMusicApp {
         for (Chord chord : chords) {
             Player player = new Player();
             // player.play("V0 I[flute]" + sadness[1] + " V1 I[piano]" + sadness[0]);
+            
             //player.play("V0 T[Andantino] I[piano] Cq Eq Gq Cq Fq Aq Cq Fq Gq Bq Dq Gq Aq Cq Eq Aq Cq Eq Gq Cq V1 T[Andantino] I[piano]  CmajW FmajW GmajW AminW CmajW");
 
             Pattern p1 = new Pattern("V0 I[Piano]" + sadness[1]);
@@ -163,6 +163,3 @@ public class MyMusicApp {
     }
 
 }
-
-
-//Realizar un ramdon de notas basado en la escala de do mayor
